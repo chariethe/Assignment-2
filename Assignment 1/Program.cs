@@ -10,8 +10,8 @@ namespace Assignment_1
     {
         static void main()
         {
-            SuperHero mySuperHero = new SuperHero("Dark Aegis");
-            mySuperHero.showPowers()
+            SuperHero mySuperHero = new SuperHero(12, 32, 56, "Dark Aegis");
+            mySuperHero.showPowers();
 
             Console.WriteLine("Press any key to exit."); 
             Console.ReadKey();

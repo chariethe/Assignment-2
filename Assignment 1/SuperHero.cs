@@ -9,11 +9,8 @@ namespace Assignment_1
     class SuperHero : Hero
     {
         //PRIVATE PROPERTIES
-        private bool strength = true;
-        private bool speed = true;
-        private bool health = true;
 
-        public SuperHero(string name): base(name)
+        public SuperHero(int strength, int speed, int health, string name): base(name)
         {
             this.name = name;
             this.showPowers();
@@ -27,14 +24,16 @@ namespace Assignment_1
         public static void main(string[] args)
         {
             string[] superPowers = { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Control" };
+            // Literal Notation or Array Initializer
             string[] tempArray = new string[superPowers.Length];
-            string[] finalArray = new string [6];
-
-            Random rnd = new Random(3);
+            string[] finalArray = new string[3];
+            // constructor Notation
+            Random rnd = new Random();
             int randomPowers;
-            for (int element=0; element < superPowers.Length; element++ )
+
+            for (int powers=0; powers < superPowers.Length; powers++ )
             {
-                tempArray[element] = superPowers[element];
+                tempArray[powers] = superPowers[powers];
             }
             int index = 0;
             while (index < finalArray.Length)
