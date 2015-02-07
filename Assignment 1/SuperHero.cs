@@ -9,6 +9,9 @@ namespace Assignment_1
     class SuperHero : Hero
     {
         //PRIVATE PROPERTIES
+        private bool strength = true;
+        private bool speed = true;
+        private bool health = true;
 
         public SuperHero(int strength, int speed, int health, string name): base(name)
         {
